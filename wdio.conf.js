@@ -13,8 +13,8 @@ exports.config = {
         "appium:platformVersion": "14.0",
         "appium:deviceName": "Pixel_Teste",
         "appium:automationName": "UiAutomator2",
-        "appium:app": join(process.cwd(), './app/android/wcandroid-13.8.apk'),
-        "appium:appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity',
+        "appium:app": join(process.cwd(), './app/android/Android-NativeDemoApp-0.4.0.apk'),
+        "appium:appWaitActivity": 'com.wdiodemoapp.MainActivity',
         "appium:fullReset": true
     }]
 }

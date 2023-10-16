@@ -1,11 +1,11 @@
 class StartScreen{
 
-    get #skipButton(){
-        return $('id:button_skip')
+    get #formsTab(){
+        return $('~Forms')
     }
 
-    async skip(){
-        this.#skipButton.click()
+    async accessFormsTab(){
+        await this.#formsTab.click()
     }
 
 }

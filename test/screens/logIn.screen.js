@@ -8,11 +8,11 @@ class LogInScreen {
     }
 
     async fillInSiteAddress(siteAddress){
-        this.#siteAddress.setValue(siteAddress)
+        await this.#siteAddress.setValue(siteAddress)
     }
 
     async continue(){
-        this.#continueButton.click()
+        await this.#continueButton.click()
     }
 }
 
