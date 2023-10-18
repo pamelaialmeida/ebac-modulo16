@@ -28,6 +28,10 @@ class FormsScreen {
         return $('//android.widget.LinearLayout/android.widget.Button[3]')
     }
 
+    get displayedMessage(){
+        return $('/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.TextView')
+    }
+
     async fillInInputField(text){
         await this.#inputField.setValue(text)
     }

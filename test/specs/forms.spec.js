@@ -11,6 +11,7 @@ describe('Fill in Forms tab', ()=> {
         await formsScreen.clickOnSwitchButton()
         await formsScreen.selectOptionInDropdownMenu(3)
         await formsScreen.clickOnActiveButton()
-        await formsScreen.clickOnOKButton()
+ //       await formsScreen.clickOnOKButton()
+        await expect(formsScreen.displayedMessage).toHaveText('This button is active')
     })
 })
